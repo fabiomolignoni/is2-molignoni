@@ -14,7 +14,7 @@ app.post('/check', function (req, res) {
     res.status(200)
     console.log(req.body)
     console.log(req.body.invocationParameters)
-    return checker(req.body.url, req.body.invocationParameters, req.body.expectedResultData, req.body.expectedResultStatusz).then(function (risultato) {
+    return checker(req.body.url, req.body.invocationParameters, req.body.expectedResultData, req.body.expectedResultStatus).then(function (risultato) {
         return res.json(risultato)
     })
 
